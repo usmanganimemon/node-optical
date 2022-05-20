@@ -12,11 +12,11 @@ app.use(cors({
 }))
 const port = 3001
 app.use(bodyParser.json())
-db.authenticate().then(() => {
-  console.log('Database connected...')
-}).catch(err => {
-  console.log('Error: ' + err)
-})
+// db.authenticate().then(() => {
+//   console.log('Database connected...')
+// }).catch(err => {
+//   console.log('Error: ' + err)
+// })
 app.use('/', authRouter)
 app.use('/patient', patientRouter)
 app.listen(port, () => {
