@@ -10,7 +10,7 @@ const app = express()
 app.use(cors({
   origin: '*'
 }))
-const port = 3001
+const port = 3000
 app.use(bodyParser.json())
 // db.authenticate().then(() => {
 //   console.log('Database connected...')
